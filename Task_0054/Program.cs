@@ -35,8 +35,8 @@ void PrintMatrix(int[,] matrix)
         Console.Write("|");
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (i < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j],3}, ");
-            else Console.Write($"{matrix[i, j],3}  ");
+            if (i < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j],3}  ");
+            else Console.Write($"{matrix[i, j],3}  "); 
         }
         Console.WriteLine("|");
     }
@@ -63,8 +63,8 @@ static void BubbleSort(int[,] array)
 }
 
 
-int[,] array2D = CreateMatrixRndInt(4, 4, 1, 6);
-Console.WriteLine("Исходный массив");
+int[,] array2D = CreateMatrixRndInt(3, 3, 1, 6);
+Console.WriteLine("Исходный массив: ");
 PrintMatrix(array2D);
 Console.WriteLine("Сортировка строк: ");
 BubbleSort(array2D);    
